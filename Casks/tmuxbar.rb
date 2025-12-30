@@ -1,6 +1,6 @@
 cask "tmuxbar" do
-  version "1.0.0"
-  sha256 "9aee7050e9f5fd0e7150b132bfbaf7439001cb4d2472d47c45721dc50853f777"
+  version "1.0.1"
+  sha256 "801111361811f8e0ff389b2122965fe6fc062ecb5833e1f2fa1082f79fe51fa1"
 
   url "https://github.com/devload/TmuxBar/releases/download/v#{version}/TmuxBar-#{version}.dmg"
   name "TmuxBar"
