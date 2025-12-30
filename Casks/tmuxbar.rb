@@ -11,6 +11,12 @@ cask "tmuxbar" do
 
   app "TmuxBar.app"
 
+  postflight do
+    system_command "/usr/bin/xattr",
+                   args: ["-rd", "com.apple.quarantine", "#{appdir}/TmuxBar.app"],
+                   sudo: false
+  end
+
   zap trash: [
     "~/Library/Preferences/com.tmuxbar.app.plist",
   ]
